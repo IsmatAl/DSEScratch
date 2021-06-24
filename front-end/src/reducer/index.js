@@ -40,6 +40,6 @@ export const reformatMetricData = (metricData) => {
 
 
 export const isDSEInProgress = (tasks) => {
-  if (tasks.find((task) => task.inFlight?.status)) return true;
+  if (tasks?.find((task) => task.inFlight?.status)) return true;
   return false;
 };

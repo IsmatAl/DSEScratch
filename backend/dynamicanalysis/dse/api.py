@@ -15,7 +15,7 @@ import numpy as np
 from storage import Storage
 from utils import getFunc
 import asyncio
-import httpx
+
 
 
 def generateRandomInput(low, high, size, varSize):
@@ -68,11 +68,17 @@ def concolicTest(id, maxIters, isPse, project):
         generatedInputs, returnVals, path = engine.explore(maxIters)
         # output DOT graph
         if (not isPse):
+
+
             file = open(pyFilePath + ".dot", "w")
             file.write(path.toDot())
             file.close()
+           
             render(engine='dot', format='png',
                    filepath=STATIC_FILES / id / file.name)
+            print('\n\n\n')
+            print('?')
+            print('\n\n\n')                    
 
     except ImportError as e:
         raise
