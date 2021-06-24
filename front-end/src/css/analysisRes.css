@@ -1,0 +1,30 @@
+.container {
+    display: flex wrap;
+    flex-direction: row;
+    align-content: space-between;
+    background-color:lightskyblue;
+}
+
+.container > * {
+    margin: 15px;
+}
+
+.row {
+    margin: 15px;
+}
+
+#se-metrics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+#se-metrics > * {
+    width: 30%;
+}
+
+.col {
+    padding: 5px;
+    display: flex;
+}

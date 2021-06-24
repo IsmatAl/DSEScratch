@@ -1,0 +1,25 @@
+.code-line {
+    font-size: 0.875em;
+    line-height: 1.4em;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    white-space: pre-wrap;
+}
+
+
+.coverage-stats {
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.coverage-stats > * {
+    border: thin solid lightskyblue;
+}
+
+.code-coverage {
+    overflow: auto;
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+}

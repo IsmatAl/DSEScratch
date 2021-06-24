@@ -1,0 +1,10 @@
+.code-editor-buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;    
+    justify-content: flex-end;
+    width: 100%;
+}
+.code-editor-buttons > * {
+    margin: 0 3px;
+}

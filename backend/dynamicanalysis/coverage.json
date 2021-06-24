@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "version": "5.5",
+        "timestamp": "2021-06-03T23:45:47.885443",
+        "branch_coverage": false,
+        "show_contexts": false
+    },
+    "files": {
+        "static\\converted\\a.py": {
+            "executed_lines": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "summary": {
+                "covered_lines": 6,
+                "num_statements": 6,
+                "percent_covered": 100.0,
+                "missing_lines": 0,
+                "excluded_lines": 0
+            },
+            "missing_lines": [],
+            "excluded_lines": []
+        }
+    },
+    "totals": {
+        "covered_lines": 6,
+        "num_statements": 6,
+        "percent_covered": 100.0,
+        "missing_lines": 0,
+        "excluded_lines": 0
+    }
+}
