@@ -75,10 +75,7 @@ def concolicTest(id, maxIters, isPse, project):
             file.close()
            
             render(engine='dot', format='png',
-                   filepath=STATIC_FILES / id / file.name)
-            print('\n\n\n')
-            print('?')
-            print('\n\n\n')                    
+                   filepath=STATIC_FILES / id / file.name)              
 
     except ImportError as e:
         raise
