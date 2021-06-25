@@ -26,6 +26,6 @@ In order to start the app execute the following commands in the specified folder
     npm run start
   
   inside backend:\
-    pip install -r .\requirements.txt\
+    pip install -r .\requirements.txt OR install every item in the requirement.txt file one by one manually, (e.g, pip install z3) in case of an error\
     cd .\dynamicanalysis\
     python manage.py runserver
