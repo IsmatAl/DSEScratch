@@ -194,36 +194,6 @@ const AnalysisResult = ({ params, inputs, outputs, id, debugLog, metrics, isRefe
                 coveredLines={codeCoverage['executed_lines']} />
             </div>
             <div className="col">
-              <Card className="text-center code-coverage">
-                <Card.Body>
-                  <Card.Title>DSE generated inputs and its outputs</Card.Title>
-                  <br />
-                  <Table
-                    responsive striped hover cellSpacing="0" width="100%">
-                    <thead>
-                      <tr>
-                        {params.map((param, i) => {
-                          return <th key={i}>
-                            {param}
-                          </th>;
-                        })}
-                        <th >output
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {inputs.map((input, idx) => {
-                        return <tr key={idx}>
-                          {input.map((arg, i) => <td key={i}>{arg}</td>)}
-                          <td>{outputs[idx]}</td>
-                        </tr>;
-                      })}
-                    </tbody>
-                  </Table>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col">
 
               <Card className="text-center">
                 <Card.Body>
@@ -239,6 +209,37 @@ const AnalysisResult = ({ params, inputs, outputs, id, debugLog, metrics, isRefe
                 </Card.Body>
               </Card>
             </div>
+
+          </div>
+          <div className="row">
+            <Card className="text-center code-coverage">
+              <Card.Body>
+                <Card.Title>DSE generated inputs and its outputs</Card.Title>
+                <br />
+                <Table
+                  responsive striped hover cellSpacing="0" width="100%">
+                  <thead>
+                    <tr>
+                      {params.map((param, i) => {
+                        return <th key={i}>
+                          {param}
+                        </th>;
+                      })}
+                      <th >output
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {inputs.map((input, idx) => {
+                      return <tr key={idx}>
+                        {input.map((arg, i) => <td key={i}>{arg}</td>)}
+                        <td>{outputs[idx]}</td>
+                      </tr>;
+                    })}
+                  </tbody>
+                </Table>
+              </Card.Body>
+            </Card>
           </div>
         </Card.Body>
       </Card>

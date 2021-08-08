@@ -56,6 +56,8 @@ operator_letter_of = '{{ i2 }}[{{ i1 }} - 1]'
 
 operator_length = 'len({{ i1 }})'
 
+operator_contains = '({{ i2 }} in {{ i1 }})'
+
 operator_mod = '({{ i1 }} % {{ i2 }})'
 
 operator_round = 'Decimal({{ i1 }}).to_integral_value(rounding=ROUND_HALF_UP)'
@@ -110,8 +112,8 @@ ln = 'log10({{ i1 }})'
 
 exp = 'exp({{ i1 }})'
 
-# pow10 = 'pow(10, {{ i1 }})'
-# powEps = 'pow(sys.float_info.epsilon, {{ i1 }})'
+pow10 = 'pow(10, {{ i1 }})'
+
 
 procedures_definition = '''from math import *   # pragma: no cover
 from decimal import *   # pragma: no cover
@@ -156,6 +158,7 @@ scratchToPython = {
     'operator_or': operator_or,
     'operator_not': operator_not,
     'operator_lt': operator_lt,
+    'operator_contains': operator_contains,
     'control_repeat_until': control_repeat_until,
     'control_repeat': control_repeat,
     'control_if_else': control_if_else,
@@ -175,8 +178,7 @@ scratchToPython = {
     'sqrt': sqrt,
     'sin': sin,
     'cos': cos,
-    # 'pow10': pow10,
-    # 'e ^': powEps,
+    'pow10': pow10,
     'procedures_definition': procedures_definition,
     'procedures_prototype': procedures_prototype,
     'argument_reporter_string_number': argument_reporter_string_number

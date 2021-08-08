@@ -117,16 +117,9 @@ class CodeCoverageAPI(viewsets.GenericViewSet):
         })
 
     def postSSE(self, request):
-        # serializer = CodeCoverageSerializer(data=request.data)
-        # serializer.is_valid(raise_exception=True)
-
         storage = Storage()
         entry = request.data['entry']
         refId = request.data['refId']
-        # expectedOutputs = serializer.validated_data['expectedOutputs']
-        # pyFileName = serializer.validated_data['pyFileName']
-        # entry = serializer.validated_data['entry']
-
         projects = storage.getProjectsByEntry(entry)
         refProject = storage.getProjectById(refId)
 
