@@ -39,7 +39,7 @@ const PyEditor = ({ id, code, onSubmitCode }) => {
           setOptions={{
             enableSnippets: false,
             showLineNumbers: false,
-            tabSize: 2,
+            tabSize: 4,
             maxLines: Infinity
           }}
         /> : <AceEditor
@@ -60,7 +60,7 @@ const PyEditor = ({ id, code, onSubmitCode }) => {
             enableSnippets: true,
             showLineNumbers: true,
             maxLines: Infinity,
-            tabSize: 2,
+            tabSize: 4,
           }} />}
       </div>
       <div className='row'>
