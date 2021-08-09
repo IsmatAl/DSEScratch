@@ -25,6 +25,10 @@ In order to start the app execute the following commands in the specified folder
     npm install\
     npm run start
   
+  inside project root file:\
+    python -m venv env
+    .\env\Scripts\activate
+
   inside backend:\
     pip install -r .\requirements.txt OR install every item in the requirement.txt file one by one manually, (e.g, pip install z3) in case of an error\
     cd .\dynamicanalysis\
