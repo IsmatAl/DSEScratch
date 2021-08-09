@@ -37,6 +37,7 @@ const PyEditor = ({ id, code, onSubmitCode }) => {
           highlightActiveLine={false}
           value={pyCode}
           setOptions={{
+            useSoftTabs: false,
             enableSnippets: false,
             showLineNumbers: false,
             tabSize: 4,
@@ -55,6 +56,7 @@ const PyEditor = ({ id, code, onSubmitCode }) => {
           highlightActiveLine={true}
           value={pyCode}
           setOptions={{
+            useSoftTabs: false,
             enableBasicAutocompletion: true,
             enableLiveAutocompletion: true,
             enableSnippets: true,
